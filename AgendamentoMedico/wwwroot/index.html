@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Agendamento Médico - Especialidades</title>
+    <script src="/js/app.js" defer></script>
+</head>
+<body>
+    <h1>Lista de Especialidade</h1>
+    <ul id="especialidadesList"></ul>
+
+    <h1>Adicionar Especialidade</h1>
+    <form id="especialidadeForm">
+        <input type="text" id="especialidadeNome" placeholder="Nome da Especialidade" required />
+        <button type="submit">Adicionar</button>
+    </form>
+</body>
+<script>
+    fetch('/especialidade')
+        .then(res => res.json())
+        .then(data => console.log(data))
+        .catch(err => console.error('Erro:', err));
+</script>
+</html>
