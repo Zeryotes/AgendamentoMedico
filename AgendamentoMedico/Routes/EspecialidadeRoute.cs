@@ -18,12 +18,12 @@ public static class EspecialidadeRoute
                 await context.SaveChangesAsync();
             });
         
-        route.MapGet("", async (EspecialidadeContext context) =>
-        {
-            var especialidades = await context.Especialidades.ToListAsync();
-            
-            return Results.Ok(especialidades);
-        });
-
+        route.MapGet("", 
+            async (EspecialidadeContext context) =>
+            {
+                var especialidades = await context.Especialidades.ToListAsync();
+                
+                return Results.Ok(especialidades);
+            });
     }
 }

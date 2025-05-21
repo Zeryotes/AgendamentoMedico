@@ -7,6 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 builder.Services.AddScoped<EspecialidadeContext>();
+builder.Services.AddScoped<ConvenioContext>();
 
 var app = builder.Build();
 
@@ -19,5 +20,6 @@ if (app.Environment.IsDevelopment())
 }
 
 app.EspecialidadeRoutes();
+app.ConvenioRoutes();
 
 app.Run();
