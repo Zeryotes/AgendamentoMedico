@@ -27,9 +27,9 @@ dotnet ef database update --context ConvenioContext
 - [X] Listar especialidades
 - [X] Cadastrar convênio
 - [X] Listar convênios
-- [] Definir disponibilidade de horário
-- [] Listar horários de marcação
-- [] Agendar uma consulta
-- [] Listar agendamentos
-- [] Gerar atendimento
-- [] Listar atendimentos
+- [ ] Definir disponibilidade de horário
+- [ ] Listar horários de marcação
+- [ ] Agendar uma consulta
+- [ ] Listar agendamentos
+- [ ] Gerar atendimento
+- [ ] Listar atendimentos
