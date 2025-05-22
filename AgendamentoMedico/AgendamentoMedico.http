@@ -1,6 +1,6 @@
 @AgendamentoMedico_HostAddress = http://localhost:5098
 
-GET {{AgendamentoMedico_HostAddress}}/weatherforecast/
+GET {{AgendamentoMedico_HostAddress}}/agendamentomedico/
 Accept: application/json
 
 ###
